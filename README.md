@@ -27,15 +27,15 @@ image: mysql to image: mysql:5.6
 ### Option 2: Use pre-built docker images
 1. Clone this source code
 ``` sh
-https://github.com/doquoccuong84/fluxday.git
+https://github.com/doquoccuong84/fluxday-docker.git
 ```
 2. Build "fluxday-app" and "fluxday-db" services on docker by runing below command.
 ``` sh
 docker-compose up -d --build --remove-orphans
 ``` 
-3. Get into the "fluxday-app" to setup the database.
+3. Get into the "fluxday-app" container.
 ``` sh
-docker exec -it fluxday-app /bin/bash (to log in to the container)
+docker exec -it fluxday-app /bin/bash
 ```
 4. Set up the database 
 ``` sh
