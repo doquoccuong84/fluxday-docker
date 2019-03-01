@@ -1,0 +1,22 @@
+version: '1'
+services:
+  fluxday-db:
+    container_name: fluxday-db
+    image: doquoccuong84/fluxday-db
+    env_file:
+      - db.env
+    ports:
+      - 3306:3306
+  fluxday-app:
+    container_name: fluxday-app
+    image: doquoccuong84/fluxday-app
+    tty: true
+    stdin_open: true
+    env_file:
+      - app.env
+    depends_on:
+      - fluxday-db
+    links:
+      - fluxday-db
+    ports:
+      - 3000:3000
