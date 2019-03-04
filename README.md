@@ -3,7 +3,7 @@
 I have forked it from # [foradian/fluxday](https://github.com/foradian/fluxday) and fixed some configuration issues. You can get the fixes #[doquoccuong84/fluxday](https://github.com/doquoccuong84/fluxday).
 
 ## Installation
-There are 2 options for your installation on Docker. Option 1 is the original one. I shared my pre-built docker images to make it more simple.
+There are 2 options for your installation on Docker. 
 
 ### Option 1: Original guidelines from Foradian with some tips.
 You can clone the source code here: https://github.com/doquoccuong84/fluxday.git , then setup the dockers as the following steps (thanks to the tips shared here: https://github.com/foradian/fluxday/issues/43):
